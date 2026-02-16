@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Wishlist</title>
     <link href="../../../src/assets/css/output.css" rel="stylesheet" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 </head>
 <body>
-    <header>
+     <header>
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-between items-center py-4 gap-y-4">
          <a href="../../../index.html" class="cursor-pointer"> <h1 class="font-bold text-2xl">Exclusive</h1></a>
-
           <nav>
             <ul class="flex gap-7 justify-center">
               <li><a href="#" class="hover:underline hover:text-primary">Home</a></li>
               <li><a href="#" class="hover:underline hover:text-primary">Contact</a></li>
-              <li><a href="../../Pages/about/about.html" class="hover:underline hover:text-primary">About</a></li>
-              <li><a href="./src/Pages/auth/register.html" class="hover:underline hover:text-primary">Sign in</a></li>
+              <li><a href="./src/Pages/about/about.html" class="hover:underline hover:text-primary">About</a></li>
+              <li><a href="./src/Pages/auth/register.html" class="hover:underline hover:text-primary">Sign up</a></li>
             </ul>
           </nav>
-
           <div class="md:hidden">
             <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
           </div>
-
           <div class="hidden md:flex gap-3 items-center">
             <div class=" bg-[#e3e0e074] p-2 outline-none rounded-md flex items-center">
               <input
@@ -34,91 +35,119 @@
               />
               <!-- <i class="fa-solid fa-magnifying-glass text-[#646566]"></i> -->
             </div>
-            <i class="fa-regular fa-heart"></i>
+            <a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
             <i class="fa-solid fa-cart-arrow-down"></i>
           </div>
         </div>
       </div>
-    </header>
-    <p class="h-0.5 bg-[#e3e0e074]"></p>
-
-<section class="min-h-screen flex items-center bg-gray-50 mt-7">
-  
-    <div class="flex items-start justify-between gap-19 lg:gap-20 max-w-6xl mx-auto">
-      
-      <!-- Image Section -->
-       
-<div class="w-full min-h-[600px] flex justify-center lg:justify-start mt-5">
-        <img 
-          src="../../../src/assets/images/Side Image.png" 
-          alt="Shopping Cart" 
-         class="w-full h-full object-cover"
-
-        />
-      </div>
-<div class="container mx-auto px-4 py-12">
-      <!-- Form Section -->
-      <div class="w-full lg:w-1/2 pt-10">
-        <div class="w-full max-w-sm">
-          <h2 class="text-3xl font-medium text-gray-900 mb-3 tracking-wide">Log in to Exclusive</h2>
-          <p class="text-base text-gray-700 mb-3">Enter your details below</p>
-          
-          <form class="space-y-8">
-
-            <!-- Email/Phone Input -->
-            <div class="relative">
-              <input 
-                type="text" 
-                name="email_phone" 
-                id="email_phone" 
-                class="block py-2 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer" 
-                placeholder=" " 
-                required 
+     </header>
+     <p class="h-0.5 bg-[#e3e0e074]"></p>
+     
+     <section>
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between mt-16">
+            <span>Wishlist (4)</span>
+            <button class="text-sm text-gray-500 hover:text-gray-700 transition-colors border-2 p-3">Move All To Bag</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 h-full items-center mt-6">
+          <div class="group bg-white rounded-md p-2">
+            <div class="bg-[#F5F5F5] rounded-md h-56 flex items-center justify-center relative overflow-hidden">
+              <img
+                src="../../../src/assets/images/SellingProducts/bag.png"
+                class="object-contain h-32"
+                alt="bag"
               />
-              <label 
-                for="email_phone" 
-                class="absolute text-base text-gray-500 duration-300 transform -translate-y-7 scale-90 top-2 origin-[0] peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-7"
-              >
-                Email or Phone Number
-              </label>
+              <button class="absolute bottom-0 w-full bg-black text-white py-2 opacity-0 group-hover:opacity-100 transition-all">
+                Add To Cart
+              </button>
             </div>
-
-            <!-- Password Input -->
-            <div class="relative">
-              <input 
-                type="password" 
-                name="password" 
-                id="password" 
-                class="block py-2 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer" 
-                placeholder=" " 
-                required 
-              />
-              <label 
-                for="password" 
-                class="absolute text-base text-gray-500 duration-300 transform -translate-y-7 scale-90 top-2 origin-[0] peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-7"
-              >
-                Password
-              </label>
+            <div class="py-4">
+              <h3 class="font-bold">Gucci duffle bag</h3>
+              <div class="flex gap-3 mt-1">
+                <span class="text-primary font-semibold">$960</span>
+                <span class="line-through text-gray-400">$1160</span>
+              </div>
             </div>
-<div class="flex items-center justify-between align-middle">
-            <!-- Create Account Button -->
-            <button type="submit" class=" text-white bg-primary hover:bg-gray-300 font-medium rounded text-base px-6 py-3.5 mt-5 transition-colors duration-200">
-              Log in
-            </button>
-            <!-- Login Link -->
-            <a class="text-primary font-medium underline hover:!text-gray-300 ml-2">Forget Password?</a>
-
           </div>
-        </form>
+
+          <div class="group bg-white rounded-md p-2">
+            <div class="bg-[#F5F5F5] rounded-md h-56 flex items-center justify-center relative overflow-hidden">
+              <img
+                src="../../../src/assets/images/SellingProducts/music.png"
+                class="object-contain h-32"
+                alt="music"
+              />
+              <button class="absolute bottom-0 w-full bg-black text-white py-2 opacity-0 group-hover:opacity-100 transition-all">
+                Add To Cart
+              </button>
+            </div>
+            <div class="py-4">
+              <h3 class="font-bold">RGB liquid CPU Cooler</h3>
+              <div class="flex gap-3 mt-1">
+                <span class="text-primary font-semibold">$160</span>
+                <span class="line-through text-gray-400">$170</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-md p-2">
+            <div class="bg-[#F5F5F5] rounded-md h-56 flex items-center justify-center relative overflow-hidden">
+              <img
+                src="../../../src/assets/images/Products/GP11_PRD3 1.png"
+                class="object-contain h-32"
+                alt="Playstation"
+              />
+              <button class="absolute bottom-0 w-full bg-black text-white py-2 opacity-0 group-hover:opacity-100 transition-all">
+                Add To Cart
+              </button>
+            </div>
+            <div class="py-4">
+              <h3 class="font-bold">The north coat</h3>
+              <div class="flex gap-3 mt-1">
+                <span class="text-primary font-semibold">$260</span>
+                <span class="line-through text-gray-400">$360</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-md p-2">
+            <div class="bg-[#F5F5F5] rounded-md h-56 flex items-center justify-center relative overflow-hidden">
+              <img
+                src="../../../src/assets/images/Products/jaket2.png"
+                class="object-contain h-32"
+                alt="jaket"
+              />
+              <button class="absolute bottom-0 w-full bg-black text-white py-2 opacity-0 group-hover:opacity-100 transition-all">
+                Add To Cart
+              </button>
+            </div>
+            <div class="py-4">
+              <h3 class="font-bold">Small BookSelf</h3>
+              <div class="flex gap-3 mt-1">
+                <span class="text-primary font-semibold">$360</span>
+                <span class="line-through text-gray-400">$160</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-    </div>
-  </div>
-</section>
+     </section>
+  
 
-    
-   <footer class="bg-black text-white py-12 md:py-20 px-6 md:px-10 font-sans">
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="bg-black text-white py-12 md:py-20 px-6 md:px-10 font-sans">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-start gap-8 md:gap-4">
     
     <div class="flex flex-col gap-4 min-w-[200px] flex-1">
@@ -193,5 +222,6 @@
     </p>
   </div>
 </footer>
+
 </body>
 </html>
