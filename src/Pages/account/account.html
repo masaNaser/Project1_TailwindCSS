@@ -3,29 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Account</title>
     <link href="../../../src/assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-between items-center py-4 gap-y-4">
-          <a href="../../../index.html" class="cursor-pointer"><h1 class="font-bold text-2xl">Exclusive</h1></a>
+          <a href="../../../index.html" class="cursor-pointer">
+            <h1 class="font-bold text-2xl">Exclusive</h1></a
+          >
           <nav>
             <ul class="flex gap-7 justify-center">
-              <li><a href="../../../index.html" class="hover:underline hover:text-primary">Home</a></li>
-              <li><a href="../contact/contact.html" class="hover:underline hover:text-primary">Contact</a></li>
-              <li><a href="../../Pages/about/about.html" class="hover:underline hover:text-primary">About</a></li>
-              <li><a href="./src/Pages/auth/register.html" class="hover:underline hover:text-primary">Sign up</a></li>
+              <li>
+                <a
+                  href="../../../index.html"
+                  class="hover:underline hover:text-primary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact/contact.html"
+                  class="hover:underline hover:text-primary"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about/about.html"
+                  class="hover:underline hover:text-primary"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../auth/register.html"
+                  class="hover:underline hover:text-primary"
+                  >Sign up</a
+                >
+              </li>
             </ul>
           </nav>
-
           <div class="md:hidden">
             <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
           </div>
-
           <div class="hidden md:flex gap-3 items-center">
-            <div class="bg-[#e3e0e074] p-2 outline-none rounded-md flex items-center">
+            <div
+              class="bg-[#e3e0e074] p-2 outline-none rounded-md flex items-center"
+            >
               <input
                 type="text"
                 class="text-[#646566] bg-transparent border-0 w-32 lg:w-auto"
@@ -33,107 +63,94 @@
               />
               <!-- <i class="fa-solid fa-magnifying-glass text-[#646566]"></i> -->
             </div>
-             <a href="../wishlist/wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
             <i class="fa-solid fa-cart-arrow-down"></i>
-            <a href="../account/account.html"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="./account.html"
+              ><i class="fa-regular fa-circle-user"></i
+            ></a>
           </div>
         </div>
       </div>
     </header>
     <p class="h-0.5 bg-[#e3e0e074]"></p>
 
-    <section class="min-h-screen flex items-center bg-gray-50">
-      <div class="flex items-start justify-between gap-19 lg:gap-20 max-w-6xl mx-auto">
-        <div class="w-full max-h-[900px] flex justify-center lg:justify-start mt-5">
-          <img
-            src="../../../src/assets/images/Side Image.png"
-            alt="Shopping Cart"
-            class="w-full h-full object-cover"
-          />
+   <section>
+  <div class="container mx-auto px-4 py-12">
+    <div class="flex flex-wrap justify-between items-center mb-10">
+      <h5 class="text-gray-400 text-sm">Home / <span class="text-black font-medium">My Account</span></h5>
+      <h5 class="text-sm">Welcome! <span class="text-primary">Md Rimel</span></h5>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-10 items-start font-sans">
+      <div class="w-full lg:w-1/4 space-y-6">
+        <div>
+          <h3 class="font-bold text-black mb-3">Manage My Account</h3>
+          <ul class="pl-6 space-y-2">
+            <li><a href="#" class="text-muted hover:text-primary">My Profile</a></li>
+            <li><a href="#" class="text-muted hover:text-primary">Address Book</a></li>
+            <li><a href="#" class="text-muted hover:text-primary">My Payment Options</a></li>
+          </ul>
         </div>
-        <div class="container mx-auto px-4 py-12">
-          <div class="w-full lg:w-1/2 pt-10">
-            <div class="w-full max-w-sm">
-              <h2 class="text-3xl font-medium text-gray-900 mb-3 tracking-wide">
-                Create an account
-              </h2>
-              <p class="text-base text-gray-700 mb-3">
-                Enter your details below
-              </p>
 
-              <form class="space-y-8">
-                <div class="relative">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="block py-2 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    for="name"
-                    class="absolute text-base text-gray-500 duration-300 transform -translate-y-7 scale-90 top-2 origin-[0] peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-7"
-                  >
-                    Name
-                  </label>
-                </div>
+        <div>
+          <h3 class="font-bold text-black mb-3">My Orders</h3>
+          <ul class="pl-6 space-y-2">
+            <li><a href="#" class="text-muted hover:text-primary">My Returns</a></li>
+            <li><a href="#" class="text-muted hover:text-primary">My Cancellations</a></li>
+          </ul>
+        </div>
 
-                <div class="relative">
-                  <input
-                    type="text"
-                    name="email_phone"
-                    id="email_phone"
-                    class="block py-2 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    for="email_phone"
-                    class="absolute text-base text-gray-500 duration-300 transform -translate-y-7 scale-90 top-2 origin-[0] peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-7"
-                  >
-                    Email or Phone Number
-                  </label>
-                </div>
-
-                <div class="relative">
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    class="block py-2 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    for="password"
-                    class="absolute text-base text-gray-500 duration-300 transform -translate-y-7 scale-90 top-2 origin-[0] peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-7"
-                  >
-                    Password
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  class="w-full text-white bg-red-500 hover:bg-red-600 font-medium rounded text-base px-6 py-3.5 mt-5 transition-colors duration-200"
-                >
-                  Create Account
-                </button>
-
-                <p class="text-center text-base text-gray-600">
-                  Already have account?
-                  <a
-                    href="../auth/login.html"
-                    class="text-gray-900 font-medium underline hover:text-red-500 ml-2"
-                    >Log in</a
-                  >
-                </p>
-              </form>
-            </div>
-          </div>
+        <div>
+          <h3 class="font-bold text-black mb-3">My WishList</h3>
         </div>
       </div>
-    </section>
+      
+      <!-- النموذج -->
+      <div class="w-full lg:w-3/4 bg-white p-8 shadow-[0px_0px_10px_rgba(0,0,0,0.05)] rounded">
+        <h2 class="text-[#DB4444] text-xl font-medium mb-6">Edit Your Profile</h2>
+
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm">First Name</label>
+              <input type="text" placeholder="Md" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm">Last Name</label>
+              <input type="text" placeholder="Rimel" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm">Email</label>
+              <input type="email" placeholder="rimel1111@gmail.com" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm">Address</label>
+              <input type="text" placeholder="Kingston, 5236, United State" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none" />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 mb-8">
+            <label class="text-sm font-medium">Password Changes</label>
+            <input type="password" placeholder="Current Password" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none w-full" />
+            <input type="password" placeholder="New Password" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none w-full" />
+            <input type="password" placeholder="Confirm New Password" class="bg-[#F5F5F5] border-none rounded p-3 text-sm focus:ring-1 focus:ring-[#DB4444] outline-none w-full" />
+          </div>
+
+          <div class="flex justify-end items-center gap-8">
+            <button type="button" class="text-black hover:underline text-sm">Cancel</button>
+            <button type="submit" class="bg-[#DB4444] text-white px-10 py-3 rounded hover:bg-[#c13e3e] transition-colors">
+              Save Changes 
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <footer class="bg-black text-white py-12 md:py-20 px-6 md:px-10 font-sans">
       <div
