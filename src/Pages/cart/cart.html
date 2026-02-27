@@ -49,15 +49,15 @@
          <div class="flex flex-wrap mb-10">
             <span class="text-black font-medium">Checkout</span>
          </div>
-         <div class="p-8 bg-gray-50">
+         <div class="p-8 ">
            <div class="overflow-x-auto"> 
             <table class="w-full border-separate border-spacing-y-6">
               <thead>
-               <tr>
-                <th class="text-left font-normal text-gray-600 px-6">Product</th>
-                <th class="text-left font-normal text-gray-600 px-6">Price</th>
-                <th class="text-left font-normal text-gray-600 px-6">Quantity</th>
-                <th class="text-left font-normal text-gray-600 px-6">Subtotal</th>
+               <tr class="bg-white shadow-sm rounded-lg ">
+                <th class="text-left font-semibold py-6 px-6">Product</th>
+                <th class="text-left font-semibold py-6 px-6">Price</th>
+                <th class="text-left font-semibold py-6 px-6">Quantity</th>
+                <th class="text-left font-semibold py-6 px-6">Subtotal</th>
                </tr>
              </thead>
              <tbody>
@@ -105,8 +105,34 @@
          </div>
 
          <div class="flex items-center justify-between flex-wrap mt-8 gap-5">
-            <button class="w-full sm:w-auto min-w-[180px] text-black px-6 py-3 border-1 border-black border-md hover:bg-gray-800 transition-colors">Return To Shop</button>
-            <button class="w-full sm:w-auto min-w-[180px] text-black px-6 py-3 border-1 border-black border-md hover:bg-gray-800 transition-colors">Update Cart</button>
+            <button class="w-full cursor-pointer sm:w-auto min-w-[180px] text-black px-6 py-3 border-1 border-black border-md hover:bg-primary hover:text-white transition-colors">Return To Shop</button>
+            <button class="w-full cursor-pointer sm:w-auto min-w-[180px] text-black px-6 py-3 border-1 border-black border-md hover:bg-primary hover:text-white transition-colors">Update Cart</button>
+         </div>
+         <div class="mt-10 flex justify-between flex-wrap">
+          <div class="mb-5">
+            <input type="text" placeholder="Coupon Code" class="w-full text-muted md:w-auto px-4 py-3 border border-black rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary mr-5"/>
+            <button class="mt-4 w-full cursor-pointer md:w-auto px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-dark transition-colors">Apply Coupon</button>  
+          </div>
+          <div class="border-2 border-black rounded px-6 py-8 w-full md:w-auto">
+            <h3 class="text-xl font-medium mb-8">Cart Total</h3>
+             <div class="flex flex-col">
+               <div class="flex justify-between items-center pb-4 border-b border-gray-400">
+                 <span class="text-base">Subtotal:</span>
+                 <span class="text-base">$1750</span>
+               </div>
+               <div class="flex justify-between items-center py-4 border-b border-gray-400">
+                 <span class="text-base">Shipping:</span>
+                 <span class="text-base">Free</span>
+               </div>
+               <div class="flex justify-between items-center pt-4 mb-8">
+                 <span class="text-base">Total:</span>
+                 <span class="text-base">$1750</span>
+               </div>
+             </div>
+             <div class="flex justify-center">
+               <button class="bg-primary text-white px-12 py-4 rounded hover:bg-opacity-90 transition-colors cursor-pointer text-base">Procees to checkout </button>
+             </div>
+          </div>
          </div>
         </div>
      </section>
